@@ -4,6 +4,13 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "description": "A simple way to split lowdb into multiple files.",
+  "license": "MIT",
+  "author": {
+    "name": "George Vance Alfonso",
+    "email": "gvalfonso1@gmail.com",
+    "url": "https://github.com/gvalfonso"
+  },
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
@@ -13,5 +20,9 @@
   },
   "dependencies": {
     "lowdb": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gvalfonso/split-lowdb.git"
   }
 }
