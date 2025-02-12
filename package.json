@@ -1,6 +1,6 @@
 {
   "name": "split-lowdb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,7 +26,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "lowdb": "^6.0.0"
+    "lowdb": "^7.0.1"
   },
   "repository": {
     "type": "git",

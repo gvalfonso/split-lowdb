@@ -49,9 +49,7 @@ export class SplitLowDB<T extends Record<string, any>> {
       return;
     }
     db.data = value;
-    console.log(db.data);
     db.write();
-    console.log("HERE WRITE");
     this.store[key as keyof T] = value;
   }
 
