@@ -11,6 +11,13 @@
     "email": "gvalfonso1@gmail.com",
     "url": "https://github.com/gvalfonso"
   },
+  "keywords": [
+    "lowdb",
+    "JSON",
+    "db",
+    "database",
+    "split"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
