@@ -4,7 +4,9 @@ import { JSONFileSync } from "lowdb/node";
 import path from "path";
 import { StoreOptions } from "./types.js";
 
-export class SplitLowDBSync<T extends Record<string, any>> {
+export class SplitLowDBSync<
+  T extends Record<string, any> = Record<string, any>
+> {
   public baseDir: string;
   public dbs: Map<keyof T, LowSync<T[keyof T]>>;
   public store: Partial<T>;
