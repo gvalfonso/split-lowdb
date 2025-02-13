@@ -18,6 +18,9 @@
     "database",
     "split"
   ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
