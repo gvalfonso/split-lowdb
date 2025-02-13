@@ -12,6 +12,7 @@ npm install split-lowdb
 import { SplitLowDBSync } from "split-lowdb";
 const splitDB = new SplitLowDBSync({
   name: "lists", // Folder name
+  // baseDir: "" - Defaults to process.cwd()
 });
 splitDB.name; // "lists"
 
@@ -29,6 +30,7 @@ splitDB.clear(); // Deletes all json files and keys.
 import { SplitLowDBAsync } from "split-lowdb";
 const splitDB = new SplitLowDBAsync({
   name: "lists", // Folder name
+  // baseDir: "" - Defaults to process.cwd()
 });
 splitDB.name; // "lists"
 
