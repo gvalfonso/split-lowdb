@@ -56,12 +56,11 @@ export class SplitLowDBAsync<
 
   async set(key: string, value: T[keyof T]): Promise<void> {
     const db = await this.getDB(key);
-    db.data = value;
-  }
+    if (JSON.stringify(value) === JSON.stringify(db.data)) return;
 
-  async write(key: string) {
-    const db = await this.getDB(key);
+    db.data = value;
     await db.write();
+    this.store[key as keyof T] = value;
   }
 
   async delete(key: string): Promise<void> {
