@@ -43,12 +43,12 @@ export class SplitLowDBSync<
 
   set(key: string, value: T[keyof T]): void {
     const db = this.getDB(key as string);
-    if (JSON.stringify(value) === JSON.stringify(db.data)) {
-      return;
-    }
     db.data = value;
+  }
+
+  write(key: string) {
+    const db = this.getDB(key);
     db.write();
-    this.store[key as keyof T] = value;
   }
 
   delete(key: string): void {
